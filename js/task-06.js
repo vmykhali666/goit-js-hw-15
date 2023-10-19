@@ -4,7 +4,7 @@ input.addEventListener("blur", function () {
   const expectedLength = parseInt(input.getAttribute("data-length"), 10);
   const currentLength = input.value.length;
 
-  if (currentLength >= expectedLength) {
+  if (currentLength === expectedLength) {
     input.classList.remove("invalid");
     input.classList.add("valid");
   } else {

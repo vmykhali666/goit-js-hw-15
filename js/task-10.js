@@ -16,7 +16,9 @@ createButton.addEventListener('click', () => {
   createBoxes(amount);
 });
 
-destroyButton.addEventListener('click', destroyBoxes);
+destroyButton.addEventListener('click', () => {
+  destroyBoxes();
+});
 
 function createBoxes(amount) {
   for (let i = 0; i < amount; i++) {
